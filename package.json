@@ -1,0 +1,29 @@
+{
+    "name": "modus-core",
+    "version": "1.0.0",
+    "main": "app.js",
+    
+    "dependencies": {
+        "lodash": "3.8.0",
+        "bluebird": "2.9.13",
+        "fs-extra": "0.18.2",
+        
+        "babel-runtime": "5.4.4",
+        "source-map-support": "0.2.10"
+    },
+    
+    "devDependencies": {
+        "gulp": "3.8.11",
+        "gulp-plumber": "*",
+        "gulp-watch": "*",
+        "gulp-nodemon": "*",
+        "gulp-babel": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-sequence": "*",
+        "gulp-mocha": "*",
+        "gulp-eslint": "*",
+        "gulp-concat": "*",
+        
+        "chai": "*"
+    }
+}
