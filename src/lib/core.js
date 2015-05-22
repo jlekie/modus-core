@@ -430,6 +430,16 @@ module.exports = function (Promise) {
             });
             
             return component;
+        },
+        
+        'freeze': function () {
+            Object.freeze.apply(Object, this);
+        },
+        'seal': function () {
+            Object.seal.apply(Object, this);
+        },
+        'preventExtensions': function () {
+            Object.preventExtensions.apply(Object, this);
         }
     };
     
