@@ -89,6 +89,7 @@ module.exports = function (Promise) {
         'createAndInitialize': function () {
             var obj = this.create.apply(this, arguments);
             if (!obj.isInitialized()) { throw new Error('Synchronous initialization expected object to be immediately initialized') }
+            if (obj.initializedPromise.isRejected()) { throw obj.initializedPromise.reason() }
             
             return obj;
         },
