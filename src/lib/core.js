@@ -81,7 +81,7 @@ module.exports = function (Promise) {
             }
             
             Object.defineProperty(obj, 'initializedPromise', {
-                value: obj.__initializedPromise__.return(obj)
+                get: function () { return obj.__initializedPromise__.return(obj) }
             });
             
             return obj;
