@@ -433,13 +433,19 @@ module.exports = function (Promise) {
         },
         
         'freeze': function () {
-            Object.freeze.apply(Object, this);
+            Object.freeze(this);
+            
+            return this;
         },
         'seal': function () {
-            Object.seal.apply(Object, this);
+            Object.seal(this);
+            
+            return this;
         },
         'preventExtensions': function () {
-            Object.preventExtensions.apply(Object, this);
+            Object.preventExtensions(this);
+            
+            return this;
         }
     };
     
